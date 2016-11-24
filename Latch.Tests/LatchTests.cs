@@ -20,64 +20,64 @@ namespace Denxorz.Latch.Tests
         }
 
         [Test]
-        public void RunLatched_GiveBar_BarIsCalled()
+        public void RunInsideLatchd_GiveBar_BarIsCalled()
         {
             // Arrange
             var classUnderTest = new Latch();
             var foo = A.Fake<IFoo>();
 
             // Act
-            classUnderTest.RunLatched(foo.Bar);
+            classUnderTest.RunInsideLatch(foo.Bar);
 
             // Assert
             A.CallTo(() => foo.Bar()).MustHaveHappened();
         }
 
         [Test]
-        public void RunLatched_CheckWhileLatching_IsLatchedIsTrue()
+        public void RunInsideLatch_CheckWhileLatching_IsLatchedIsTrue()
         {
             // Arrange
             var classUnderTest = new Latch();
 
             // Act
             bool isLatched = false;
-            classUnderTest.RunLatched(() => isLatched = classUnderTest.IsLatched);
+            classUnderTest.RunInsideLatch(() => isLatched = classUnderTest.IsLatched);
 
             // Assert
             Assert.IsTrue(isLatched);
         }
 
         [Test]
-        public void RunLatched_CallBarAfterLatched_BarIsCalled()
+        public void RunInsideLatch_CallBarAfterLatched_BarIsCalled()
         {
             // Arrange
             var classUnderTest = new Latch();
             var foo = A.Fake<IFoo>();
 
             // Act
-            classUnderTest.RunLatched(() => { });
-            classUnderTest.RunLatched(foo.Bar);
+            classUnderTest.RunInsideLatch(() => { });
+            classUnderTest.RunInsideLatch(foo.Bar);
 
             // Assert
             A.CallTo(() => foo.Bar()).MustHaveHappened();
         }
 
         [Test]
-        public void RunLatched_CallInLatch_BarIsNotCalled()
+        public void RunInsideLatch_CallInLatch_BarIsNotCalled()
         {
             // Arrange
             var classUnderTest = new Latch();
             var foo = A.Fake<IFoo>();
 
             // Act
-            classUnderTest.RunLatched(() => classUnderTest.RunLatched(foo.Bar));
+            classUnderTest.RunInsideLatch(() => classUnderTest.RunInsideLatch(foo.Bar));
 
             // Assert
             A.CallTo(() => foo.Bar()).MustNotHaveHappened();
         }
 
         [Test]
-        public void RunLatched_BarThrows_IsLatchedIsFalseAfterBarAndExceptionWasNotSwallowed()
+        public void RunInsideLatch_BarThrows_IsLatchedIsFalseAfterBarAndExceptionWasNotSwallowed()
         {
             // Arrange
             var classUnderTest = new Latch();
@@ -86,7 +86,7 @@ namespace Denxorz.Latch.Tests
             A.CallTo(() => foo.Bar()).Throws(new DivideByZeroException());
 
             // Act
-            Assert.Throws(typeof(DivideByZeroException), () => classUnderTest.RunLatched(foo.Bar));
+            Assert.Throws(typeof(DivideByZeroException), () => classUnderTest.RunInsideLatch(foo.Bar));
 
             // Assert
             Assert.IsFalse(classUnderTest.IsLatched);

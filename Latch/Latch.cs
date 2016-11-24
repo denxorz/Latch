@@ -8,7 +8,7 @@ namespace Denxorz.Latch
 
         public bool IsLatched => latch.IsLatched;
 
-        public void RunLatched(Action action)
+        public void RunInsideLatch(Action action)
         {
             latch.RunIfNotLatched(() => latch.LatchAndRun(action));
         }

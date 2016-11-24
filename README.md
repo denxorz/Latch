@@ -23,7 +23,7 @@ This example shows a common WinForms problem which can be solved with a latch.
 ```C#
 // Declare the Latch as field: Latch someComboBoxLatch = new Latch();
 
-someComboBoxLatch.RunLatched(() =>
+someComboBoxLatch.RunInsideLatch(() =>
 {
     // do something that would probably make someComboBox fire the SelectedIndexChanged event
 });
