@@ -58,7 +58,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LlamaLatch\Latch.csproj">
+    <ProjectReference Include="..\Latch\Latch.csproj">
       <Project>{107dc28d-70b9-42f0-9897-c685bca6a98d}</Project>
       <Name>Latch</Name>
     </ProjectReference>
