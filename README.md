@@ -53,3 +53,5 @@ and which parts are only run if not latched.
 * [FakeItEasy](https://fakeiteasy.github.io/)
 * [Inedo ProGet](https://inedo.com/proget)
 * [Icons8](https://icons8.com/)
+* [NuGet](https://www.nuget.org/)
+* [GitHub](https://github.com/)
