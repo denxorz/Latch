@@ -2,14 +2,15 @@
 
 | Build | Test | Nuget | License |
 | --- | --- | --- | --- |
-| [![Build Status](https://travis-ci.org/denxorz/Latch.svg?branch=master)](https://travis-ci.org/denxorz/Latch) | [![Coverage Status](https://coveralls.io/repos/github/denxorz/Latch/badge.svg?branch=master)](https://coveralls.io/github/denxorz/Latch?branch=master) | [![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/Denxorz.Latch/) | [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/denxorz/Latch/blob/master/LICENSE) |
+| [![Build Status](https://travis-ci.org/denxorz/Latch.svg?branch=master)](https://travis-ci.org/denxorz/Latch) | [![Coverage Status](https://coveralls.io/repos/github/denxorz/Latch/badge.svg?branch=master)](https://coveralls.io/github/denxorz/Latch?branch=master) | [![NuGet](https://buildstats.info/nuget/Denxorz.Latch)](https://www.nuget.org/packages/Denxorz.Latch/) | [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/denxorz/Latch/blob/master/LICENSE) |
 
 ## What does it do?
 Latch makes sure that a piece of code is not executed when another piece of code is executing.
 
 This package is based on the following articles: 
-http://www.minddriven.de/index.php/technology/development/design-patterns/latch-design-pattern
-http://codebetter.com/jeremymiller/2007/07/02/build-your-own-cab-12-rein-in-runaway-events-with-the-quot-latch-quot/
+
+* http://www.minddriven.de/index.php/technology/development/design-patterns/latch-design-pattern
+* http://codebetter.com/jeremymiller/2007/07/02/build-your-own-cab-12-rein-in-runaway-events-with-the-quot-latch-quot/
 
 ## Examples
 ```C#
