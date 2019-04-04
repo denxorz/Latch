@@ -8,7 +8,6 @@
     <Copyright>Copyright © 2016-2019, Denxorz</Copyright>
 
     <Product>Latch</Product>
-	<PackageId>Denxorz.Latch</PackageId>
 	<Description>Pattern to avoid a part of code being called.</Description>
 	<PackageTags>Latch Pattern Denxorz Event</PackageTags>
 
