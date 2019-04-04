@@ -58,3 +58,9 @@ and which parts are only run if not latched.
 * [Icons8](https://icons8.com/)
 * [NuGet](https://www.nuget.org/)
 * [GitHub](https://github.com/)
+
+## Versions & Release Notes
+
+version 1.0.1: Added .net standard 2.0
+
+version 1.0.0: First version (.Net Framework 4.5.2)
