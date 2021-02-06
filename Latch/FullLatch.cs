@@ -21,7 +21,10 @@ namespace Denxorz.Latch
 
         public void RunIfNotLatched(Action action)
         {
-            if (IsLatched) return;
+            if (IsLatched)
+            {
+                return;
+            }
             action();
         }
     }
