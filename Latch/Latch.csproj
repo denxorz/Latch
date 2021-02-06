@@ -4,10 +4,31 @@
     <TargetFrameworks>net452;netstandard2.0;net5.0</TargetFrameworks>
     <LangVersion>latest</LangVersion>
 
-    <OutputPath>$(SolutionDir)\.build\$(Platform)\$(Configuration)\</OutputPath>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
     <PackageId>Denxorz.Latch</PackageId>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.2</Version>
+    <FileVersion>1.0.2</FileVersion>
+
+    <Company>Denxorz</Company>
+    <Authors>Dennis Geldhof</Authors>
+    <Copyright>Copyright © 2016-2021, Dennis Geldhof</Copyright>
+
+    <Product>Latch</Product>
+    <Description>Pattern to avoid a part of code being called.</Description>
+    <PackageTags>Latch Pattern Denxorz Event</PackageTags>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/denxorz/Latch</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/denxorz/Latch</RepositoryUrl>
+    <PackageIcon>Lock 2-32.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Lock 2-32.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
