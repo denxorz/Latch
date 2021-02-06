@@ -1,6 +1,6 @@
 # Latch
 
-[![Build Status](https://travis-ci.org/denxorz/Latch.svg?branch=master)](https://travis-ci.org/denxorz/Latch) [![Coverage Status](https://coveralls.io/repos/github/denxorz/Latch/badge.svg?branch=master)](https://coveralls.io/github/denxorz/Latch?branch=master) [![NuGet](https://buildstats.info/nuget/Denxorz.Latch)](https://www.nuget.org/packages/Denxorz.Latch/) [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/denxorz/Latch/blob/master/LICENSE)
+[![.Build status](https://github.com/denxorz/Latch/workflows/.NET/badge.svg)](https://github.com/denxorz/Latch/actions) [![Coverage Status](https://coveralls.io/repos/github/denxorz/Latch/badge.svg?branch=master)](https://coveralls.io/github/denxorz/Latch?branch=master) [![NuGet](https://buildstats.info/nuget/Denxorz.Latch)](https://www.nuget.org/packages/Denxorz.Latch/) [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/denxorz/Latch/blob/master/LICENSE)
 
 ## What does it do?
 Latch makes sure that a piece of code is not executed when another piece of code is executing.
