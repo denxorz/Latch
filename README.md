@@ -61,6 +61,8 @@ and which parts are only run if not latched.
 
 ## Versions & Release Notes
 
+version 1.0.2: Added .net 5.0
+
 version 1.0.1: Added .net standard 2.0
 
 version 1.0.0: First version (.Net Framework 4.5.2)
