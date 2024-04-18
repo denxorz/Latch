@@ -1,7 +1,6 @@
-namespace Denxorz.Latch.Tests
+namespace Denxorz.Latch.Tests;
+
+public interface IFoo
 {
-    public interface IFoo
-    {
-        void Bar();
-    }
+    void Bar();
 }

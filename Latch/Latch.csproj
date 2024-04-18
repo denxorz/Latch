@@ -1,18 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net452;netstandard2.0;net5.0</TargetFrameworks>
+    <TargetFrameworks>net452;netstandard2.0;net5.0;net8.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
     <PackageId>Denxorz.Latch</PackageId>
-    <Version>1.0.2</Version>
-    <FileVersion>1.0.2</FileVersion>
+    <Version>1.0.3</Version>
+    <FileVersion>1.0.3</FileVersion>
 
     <Company>Denxorz</Company>
     <Authors>Dennis Geldhof</Authors>
-    <Copyright>Copyright © 2016-2021, Dennis Geldhof</Copyright>
+    <Copyright>Copyright © 2016-2024, Dennis Geldhof</Copyright>
 
     <Product>Latch</Product>
     <Description>Pattern to avoid a part of code being called.</Description>

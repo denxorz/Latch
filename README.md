@@ -61,6 +61,8 @@ and which parts are only run if not latched.
 
 ## Versions & Release Notes
 
+version 1.0.3: Added .NET 8.0
+
 version 1.0.2: Added .NET 5.0
 
 version 1.0.1: Added .NET standard 2.0
