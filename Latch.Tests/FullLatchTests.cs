@@ -15,7 +15,7 @@ public class FullLatchTests
         // Act
 
         // Assert
-        Assert.IsFalse(classUnderTest.IsLatched);
+        Assert.That(classUnderTest.IsLatched, Is.False);
     }
 
     [Test]
@@ -57,7 +57,7 @@ public class FullLatchTests
         classUnderTest.LatchAndRun(() => isLatched = classUnderTest.IsLatched);
 
         // Assert
-        Assert.IsTrue(isLatched);
+        Assert.That(isLatched, Is.True);
     }
 
     [Test]
@@ -102,6 +102,7 @@ public class FullLatchTests
         Assert.Throws(typeof(DivideByZeroException), () => classUnderTest.LatchAndRun(foo.Bar));
 
         // Assert
-        Assert.IsFalse(classUnderTest.IsLatched);
+        Assert.That(classUnderTest.IsLatched, Is.False);
+
     }
 }

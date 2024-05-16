@@ -15,7 +15,7 @@ public class LatchTests
         // Act
 
         // Assert
-        Assert.IsFalse(classUnderTest.IsLatched);
+        Assert.That(classUnderTest.IsLatched, Is.False);
     }
 
     [Test]
@@ -43,7 +43,7 @@ public class LatchTests
         classUnderTest.RunInsideLatch(() => isLatched = classUnderTest.IsLatched);
 
         // Assert
-        Assert.IsTrue(isLatched);
+        Assert.That(isLatched, Is.True);
     }
 
     [Test]
@@ -88,6 +88,6 @@ public class LatchTests
         Assert.Throws(typeof(DivideByZeroException), () => classUnderTest.RunInsideLatch(foo.Bar));
 
         // Assert
-        Assert.IsFalse(classUnderTest.IsLatched);
+        Assert.That(classUnderTest.IsLatched, Is.False);
     }
 }
